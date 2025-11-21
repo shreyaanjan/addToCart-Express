@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+        <section>
+            <div class="heading p-5">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                        </ol>
+                    </nav>
+                    <h2 class="text-center cart-title">Cart</h2>
+                </div>
+            </div>
+        </section>
+        <section class="cart-section-titles">
+            <div class="container">
+                <div class="row" id="nothingCart">
+                    <div class="col-md-9 col-12">
+                        <div class="d-lg-block d-none">
+                            <div class="row border height-60 shop-title">
+                                <div class="col-6">
+                                    <div class=" d-flex align-items-center">
+                                        Product
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class=" d-flex align-items-center">
+                                        Price
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex align-items-center">
+                                        Quantity
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="d-flex align-items-center">
+                                        Subtotal
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row d-flex border pb-3 align-items-center" id="cartItems"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mt-4 mt-md-0">
+                        <div class="card" id="bill"></div>
+                        <div id="checkout" class="text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/js/cart.js"></script>
+</body>
+
+</html>
