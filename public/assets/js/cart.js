@@ -39,7 +39,7 @@ function displayCart() {
     if (cartArr.length === 0) {
         nothingCart.innerHTML = `
             <div class="text-center">
-                <img class="w-50" src="https://static.vecteezy.com/system/resources/previews/016/462/240/non_2x/empty-shopping-cart-illustration-concept-on-white-background-vector.jpg" alt="emptycart">
+                <img class="w-50" src="/assets/images/empty.jpg" alt="emptycart">
                 <p class="mt-3 fw-semibold">Your Cart is currently Empty.</p>
                 <button class="btn btn-success home-btn" onclick="window.location='/'">
                     Shop Now
